@@ -1,7 +1,7 @@
 Perl Guidelines
 ===============
 
-Perl Guidelines for code, documentation and tests
+Perl Guidelines for code, documentation and tests. **WORK IN PROGRESS...**
 
 ## Code Guidelines
 
