@@ -7,18 +7,27 @@ Perl Guidelines for code, documentation and tests. **WORK IN PROGRESS...**
 
 ### File manipulation
 
-  * Don't use bareword filehandles (checked by [InputOutput::ProhibitBarewordFileHandles](https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitBarewordFileHandles) Perlcritic policy)
-  * Always use the three-argument form of `open` (checked by [InputOutput::ProhibitTwoArgOpen](https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitTwoArgOpen) Perlcritic policy)
+  * Don't use bareword filehandles 
+    (checked by [InputOutput::ProhibitBarewordFileHandles](https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitBarewordFileHandles) Perlcritic policy)
+  * Always use the three-argument form of `open` 
+    (checked by [InputOutput::ProhibitTwoArgOpen](https://metacpan.org/pod/Perl::Critic::Policy::InputOutput::ProhibitTwoArgOpen) Perlcritic policy)
 
 Example:
 ```perl
 open($fh, '<', 'foo.txt');
 ```
 
-It's probably a good idea to use [File::Slurp module](https://metacpan.org/pod/File::Slurp) for bigger programs/scripts.
+It's probably a good idea to use [File::Slurp](https://metacpan.org/pod/File::Slurp) module for bigger programs/scripts.
 
 ## Documentation Guidelines
 
+You should have at least these 4 POD sections in your module:
+  * NAME
+  * DESCRIPTION
+  * SYNOPSIS
+  * AUTHOR
+
+Your module should look like this:
 ```perl
 package My::Module;
 
