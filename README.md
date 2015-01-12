@@ -17,7 +17,7 @@ Example:
 open($fh, '<', 'foo.txt');
 ```
 
-It's probably a good idea to use [File::Slurp](https://metacpan.org/pod/File::Slurp) module for bigger programs/scripts.
+It's probably a good idea to use [Path::Tiny](https://metacpan.org/pod/Path::Tiny) module to handle file manipulations for bigger programs/scripts.
 
 ## Documentation Guidelines
 
